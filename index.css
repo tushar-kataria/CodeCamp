@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.logo
+{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img
+{
+    width: 33%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    cursor: pointer;
+}
+
+.nav-list
+{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li
+{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a 
+{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif ;
+}
+
+.nav-list li a:hover
+{
+    text-decoration: none;
+    color:gray;
+}
+
+.rightNav
+{
+   
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+    margin-top: 20px;
+}
+
+#search
+{
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 9px;
+    border: 2px solid grey;
+}
+
+.background
+{
+    background: rgba(0, 0, 0, 0.7) url('background1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection
+{
+    height: 100vh;
+}
+
+.box-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf
+{
+    width: 75%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondHalf
+{
+    width:30%;
+}
+
+.secondHalf img
+{
+    width:70%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big
+{
+    font-size: 40px;
+}
+
+.text-Small
+{
+    font-size: 18px;
+}
+
+.btn
+{
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover
+{
+    background-color: gray;
+}
+
+.btn-sm
+{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.btn-dark
+{
+    color: black;
+    border: 2px solid black;
+}
+
+.section
+{
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    max-width: 80%;
+    margin: 50px auto;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+}
+
+.section-left 
+{
+    flex-direction: row-reverse;
+}
+
+.section-left .thumbnail img
+{
+    margin-top: 70px;
+}
+
+.paras
+{
+    padding: 0 65px;
+}
+
+.thumbnail img
+{
+    width: 300px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 26px;
+    margin-top: 50px;
+}
+
+.contact
+{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 600px;
+}
+
+.text-center
+{
+    padding-top: 2\0px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.form
+{
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.form-input
+{
+    margin: 15px 0;
+    padding: 5px 13px;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 30px 0;
+}
+
+textarea
+{
+    height: 90px;
+}
+
+.burger
+{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line
+{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+.footer
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+
+@media only screen and (max-width:1140px)
+{
+    .nav-list
+    {
+        flex-direction: column;
+        margin: auto;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        transition: all 1s ease-out;
+        height: 500px;
+    }
+    .rightNav
+    {
+        margin: auto;
+        text-align: center;
+        align-items: center;
+    }
+    .box-main
+    {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search
+    {
+        width: 100%;
+    }
+    .burger
+    {
+        display: block;
+    }
+    .h-nav-resp
+    {
+        height: 72px;
+    }
+    .v-class-resp
+    {
+        opacity: 0;
+    }
+    .section
+    {
+        flex-direction: column-reverse;
+    }
+    .text-big
+    {
+        text-align: center;
+    }
+    .text-Small
+    {
+        text-align: center;
+    }
+    .buttons
+    {
+        text-align: center;
+    }
+    .paras
+    {
+        padding: 0px;
+    }
+}
